@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class MapAB {
     public static void main(String[] args) {
-        
         Map<String ,String > dict = new HashMap<>();
         dict.put("a","Hi,");
         dict.put("b","Java");
