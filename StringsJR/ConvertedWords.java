@@ -2,15 +2,15 @@ package bat.coding.java.StringsJR;
 
 public class ConvertedWords {
     public static void main(String[] args) {
-        String original = "мор мама папа дима трос ром котик сорт";
-        String[] originalWords = original.split(" ");
-        StringBuilder stringBuilder;
 
-        for (int i = 0; i < originalWords.length; i++) {
-            for (int j = i + 1; j < originalWords.length; j++) {
-                stringBuilder = new StringBuilder(originalWords[j]);
-                if (originalWords[i].equals(stringBuilder.reverse().toString())){
-                    System.out.println(originalWords[i] + " - " + stringBuilder.reverse());
+        String[] words = "мор мама папа дима трос ром котик сорт".split(" ");
+        StringBuilder reverseWord;
+
+        for (int i = 0; i < words.length; i++) {
+            for (int j = i + 1; j < words.length; j++) {
+                reverseWord = new StringBuilder(words[j]).reverse();
+                if (words[i].equals(reverseWord.toString())){
+                    System.out.println(words[i] + " - " + reverseWord.reverse());
                 }
             }
         }
