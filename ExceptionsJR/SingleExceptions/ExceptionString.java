@@ -1,4 +1,4 @@
-package bat.coding.java.ExceptionsJR;
+package bat.coding.java.ExceptionsJR.SingleExceptions;
 
 public class ExceptionString {
     public static void main(String[] args) {
